@@ -18,6 +18,8 @@ Please use the following command to install all required library.
 pip install -r requirements.txt
 ```
 
+Note : the data folder and text video can be found on the link in the attached email.
+
 ## Data Processing and Cleaning
 The first process in this whole pipeline is to clean the review data. 
 This process is done using the 01. Data Processing.ipynb notebook
@@ -59,7 +61,7 @@ In this process, there are multiple step that can be implemented to improve the 
 Some thing like AWS ES should be able to handle this task better. 
 2. LLM Selection : In this project gpt-4o-mini is used because it is fast and cheap. But depending on the requirement we may need to get a better model like gpt-4o or move towards open source option like Llamma. 
 3. Using Agent : As of now we are not using any LLM library like Langchain or LlamaIndex, the main reason is mostly because time constrain. But using this library we can create an LLM agent that can more intellegenty gather information about the user question. some of the benefits of using LLM agents and these library are 
-a. We can remove the user side filtering and rely on the LLM agent to do it automatically. For example if user want to know what is the latest trend based on the review, insted of manually selecting the start and end date of the review, LLM agent can intelegently do it based on the user question. Although we need to make sure that the LLM understand the filtering function clearly. 
-b. Langchain and LLammaIndex also allow use to integrate the RAG system better because in these library there are built in feature that handle most of the heavy works, instead of 
-c. A lot of prebuilt function that will make development of complex function easier. 
+- We can remove the user side filtering and rely on the LLM agent to do it automatically. For example if user want to know what is the latest trend based on the review, insted of manually selecting the start and end date of the review, LLM agent can intelegently do it based on the user question. Although we need to make sure that the LLM understand the filtering function clearly. 
+- Langchain and LLammaIndex also allow use to integrate the RAG system better because in these library there are built in feature that handle most of the heavy works, instead of 
+- A lot of prebuilt function that will make development of complex function easier. 
 4. Quality Scoring : Adding some kind of score to the LLM response so that we can use it to make the LLM better. Unable to implement this feature because of time constrains.
