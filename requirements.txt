@@ -1,0 +1,7 @@
+faiss-cpu==1.8.0.post1
+numpy==1.26.4
+openai==1.42.0
+pandas==2.2.0
+sentence-transformers==3.0.1
+streamlit==1.38.0
+torch==2.4.0
